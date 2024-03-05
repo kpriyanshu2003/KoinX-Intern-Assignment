@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       {/* <TradingView /> */}
       {/* <Sentiment /> */}
-      <About />
+      {/* <About /> */}
     </div>
   );
 }
