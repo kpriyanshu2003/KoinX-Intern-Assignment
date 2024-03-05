@@ -10,7 +10,7 @@ export function CardContainer({ children }: { children: React.ReactNode }) {
 export function CardTitle({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return <h3 className="text-2xl font-medium">{children}</h3>;
+  return <h3 className="text-2xl font-semibold">{children}</h3>;
 }
 
 export function CardContent({ children }: { children: React.ReactNode }) {
@@ -22,10 +22,21 @@ export function CardSubHeading({
   icon,
 }: Readonly<{ children: React.ReactNode }> & { icon?: string }) {
   return (
-    <h3 className="text-xl">
-      <>{children}</>
-      {icon && <> &emsp; {icon}</>}
-    </h3>
+    <div className="flex items-center my-4">
+      <h3 className="text-xl font-medium">{children}</h3>
+      {icon && (
+        <>
+          &emsp;
+          <Image
+            src={icon}
+            alt="info-icon"
+            width={50}
+            height={50}
+            className="w-5 h-5"
+          />
+        </>
+      )}
+    </div>
   );
 }
 
