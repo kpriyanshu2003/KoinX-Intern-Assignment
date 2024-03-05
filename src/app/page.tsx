@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Sentiment from "@/components/Sentiment";
+import Team from "@/components/Team";
 import TradingView from "@/components/TradingViewWidget";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       {/* <TradingView /> */}
       {/* <Sentiment /> */}
       {/* <About /> */}
+      <Team />
     </div>
   );
 }
