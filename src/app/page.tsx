@@ -1,5 +1,10 @@
 import React from "react";
+import Team from "@/components/Team";
 
 export default function Home() {
-  return <div>NavBar</div>;
+  return (
+    <div>
+      <Team />
+    </div>
+  );
 }
