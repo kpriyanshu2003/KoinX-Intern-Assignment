@@ -9,69 +9,69 @@ import React from "react";
 
 function About() {
   return (
-    <div>
+    <div className="bg-white p-4">
       <CardContainer>
         <CardTitle>About BitCoin</CardTitle>
         <CardContainer>
           <CardSubHeading>What is BitCoin ?</CardSubHeading>
           <CardContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-            laboriosam deserunt obcaecati, voluptatum commodi alias consectetur
-            delectus ipsum enim molestias numquam necessitatibus ab voluptatibus
-            nemo eum architecto explicabo tenetur eligendi distinctio? Sunt fuga
-            voluptatum ratione minus sed, iusto perferendis consequuntur quam
-            veritatis perspiciatis laudantium magnam! Facere, molestias odit.
-            Aliquam, quae?
+            Bitcoin&apos;s price today is US$16,951.82, with a 24-hour trading
+            volume of $19.14 B. BTC is +0.36% in the last 24 hours. It is
+            currently -7.70% from its 7-day all-time high of $18,366.66, and
+            3.40% from its 7-day all-time low of $16,394.75. BTC has a
+            circulating supply of 19.24 M BTC and a max supply of 21 M BTC.
           </CardContent>
         </CardContainer>
         <hr />
         <CardContainer>
           <CardSubHeading>Lorem ipsum dolor sit amet.</CardSubHeading>
           <CardContent>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-            iusto quas illo architecto tempore autem libero unde nemo magni vel!
-            Dignissimos at voluptatibus laboriosam accusantium sed perferendis
-            suscipit doloribus dolor, vel, iure beatae officia. Iure vero iusto
-            doloremque quam. Modi iure quod excepturi explicabo minima
-            perspiciatis voluptas tempore hic nam! Assumenda necessitatibus
-            consequatur aspernatur molestiae sapiente nostrum aliquam, tempora
-            qui quaerat, commodi at voluptas autem velit soluta odit dolorem
-            illum, ducimus dolore voluptatum debitis voluptatibus. Saepe beatae
-            corrupti impedit, eos nesciunt id rem iusto suscipit velit quo
-            temporibus maiores nulla quibusdam enim quam ea harum totam. <br />
+            Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit
+            lobortis tristique pharetra. Diam id et lectus urna et tellus
+            aliquam dictum at. Viverra diam suspendisse enim facilisi diam ut
+            sed. Quam scelerisque fermentum sapien morbi sodales odio sed
+            rhoncus. Ultricies urna volutpat pendisse enim facilisi diam ut sed.
+            Quam scelerisque fermentum sapien morbi sodales odio sed rhoncus.
             <br />
-            Minima sapiente laborum tempore totam voluptatibus consequatur nihil
-            quo optio beatae at doloribus temporibus officia cum, cumque qui
-            nisi reiciendis aliquid, architecto animi modi pariatur vel
-            consectetur corrupti? Incidunt doloribus officiis adipisci, ipsum
-            accusantium voluptatibus neque repellat, mollitia nobis beatae
-            molestiae amet quidem omnis! <br />
-            <br /> Libero, sint facilis. Quos, voluptatem consequatur ipsum
-            perspiciatis voluptatibus hic nemo rem nisi facere mollitia eveniet,
-            eum, quis veniam magni commodi aliquam facilis! Illo sequi nobis
-            quaerat vel aperiam corrupti saepe, nulla laborum fuga, nesciunt
-            corporis unde, ullam laudantium sit rerum enim natus obcaecati
-            dolorem cumque eaque? Necessitatibus vitae beatae iusto recusandae
-            consectetur, aperiam, quod voluptas atque rem, itaque ullam.
+            <br />
+            Diam praesent massa dapibus magna aliquam a dictumst volutpat.
+            Egestas vitae pellentesque auctor amet. Nunc sagittis libero
+            adipiscing cursus felis pellentesque interdum. Odio cursus phasellus
+            velit in senectus enim dui. Turpis tristique placerat interdum sed
+            volutpat. Id imperdiet magna eget eros donec cursus nunc. Mauris
+            faucibus diam mi nunc praesent massa turpis a. Integer dignissim
+            augue viverra nulla et quis lobortis phasellus. Integer pellentesque
+            enim convallis ultricies at.
+            <br />
+            <br />
+            Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam
+            massa vel convallis duis ac. Mi adipiscing semper scelerisque
+            porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia
+            congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in
+            eget. Ullamcorper dui
           </CardContent>
         </CardContainer>
         <hr />
         <CardTitle>Already Holding a Bitcoin ?</CardTitle>
-        <div className="flex gap-5 border">
+        <div className="flex gap-5">
+          {/* background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%); */}
           <CardImageContainer
             buttonText="Check Now"
             buttonLink="/"
             text="Calculate Your Profits"
-            image="/vercel.svg"
+            image="/assets/investing.png"
+            gradient="linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%)"
           />
+          {/* background: linear-gradient(135.73deg, #FF9865 0%, #EF3031 110.55%); */}
           <CardImageContainer
             buttonText="Check Now"
             buttonLink="/"
             text="Calculate Your Profits"
-            image="/vercel.svg"
+            image="/assets/charts.png"
+            gradient="linear-gradient(135.73deg, #FF9865 0%, #EF3031 110.55%)"
           />
         </div>
-        <hr />
+        <hr className="my-5" />
         <CardContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ex
           enim aspernatur recusandae consequuntur! Nesciunt, illo earum quisquam
