@@ -1,9 +1,9 @@
-import Tokenomics from "@/components/Tokenomics";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
     <div>
-      <Tokenomics />
+      <Team />
     </div>
   );
 }
