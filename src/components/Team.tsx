@@ -1,10 +1,11 @@
+import { teamData } from "@/constants/team-data";
 import { CardContainer, CardContent, CardTitle } from "@/ui/Card";
 import TeamMember from "@/ui/TeamMember";
 import React from "react";
 
 function Team() {
   return (
-    <div>
+    <div className="p-4 bg-white">
       <CardContainer>
         <CardTitle>Team</CardTitle>
         <CardContent>
@@ -16,38 +17,16 @@ function Team() {
           nulla, iste eos sint aperiam! Qui, enim maxime.
         </CardContent>
         <CardContainer>
-          <TeamMember name="John Smith" image="/vercel.svg" designation="SDE">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            laudantium architecto accusantium error vero vitae incidunt commodi
-            cupiditate animi non possimus facere id unde tempora nostrum modi
-            ipsum ab eos maiores, iure amet? Eius magni iusto quidem veritatis,
-            aliquid consectetur. Dignissimos ea molestias voluptate quidem,
-            molestiae asperiores ipsa! Ullam, id.
-          </TeamMember>
-          <TeamMember name="John Smith" image="/vercel.svg" designation="SDE">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            laudantium architecto accusantium error vero vitae incidunt commodi
-            cupiditate animi non possimus facere id unde tempora nostrum modi
-            ipsum ab eos maiores, iure amet? Eius magni iusto quidem veritatis,
-            aliquid consectetur. Dignissimos ea molestias voluptate quidem,
-            molestiae asperiores ipsa! Ullam, id.
-          </TeamMember>
-          <TeamMember name="John Smith" image="/vercel.svg" designation="SDE">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            laudantium architecto accusantium error vero vitae incidunt commodi
-            cupiditate animi non possimus facere id unde tempora nostrum modi
-            ipsum ab eos maiores, iure amet? Eius magni iusto quidem veritatis,
-            aliquid consectetur. Dignissimos ea molestias voluptate quidem,
-            molestiae asperiores ipsa! Ullam, id.
-          </TeamMember>
-          <TeamMember name="John Smith" image="/vercel.svg" designation="SDE">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            laudantium architecto accusantium error vero vitae incidunt commodi
-            cupiditate animi non possimus facere id unde tempora nostrum modi
-            ipsum ab eos maiores, iure amet? Eius magni iusto quidem veritatis,
-            aliquid consectetur. Dignissimos ea molestias voluptate quidem,
-            molestiae asperiores ipsa! Ullam, id.
-          </TeamMember>
+          {teamData.map((member) => (
+            <TeamMember
+              key={member.name}
+              name={member.name}
+              image={member.image}
+              designation={member.designation}
+            >
+              {member.description}
+            </TeamMember>
+          ))}
         </CardContainer>
       </CardContainer>
     </div>
