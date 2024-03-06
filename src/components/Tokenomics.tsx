@@ -1,12 +1,13 @@
 import { CardContent, CardSubHeading, CardTitle } from "@/ui/Card";
 import React from "react";
+import { PieChartt } from "./PieChart";
 
 function Tokenomics() {
   return (
-    <div>
+    <div className="p-4 bg-white">
       <CardTitle>Tokenomics</CardTitle>
       <CardSubHeading>Initial Distribution</CardSubHeading>
-      {/* Pie Chart Goes here */}
+      <PieChartt />
       <CardContent>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ad quas
         quos culpa optio nam iste, fuga libero voluptatem alias deleniti
