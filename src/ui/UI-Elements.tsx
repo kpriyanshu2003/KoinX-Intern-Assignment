@@ -20,7 +20,7 @@ export function Button({
 
 export function ProgressBar({ color, progress, text }: ProgressBarProps) {
   return (
-    <div className="flex items-center w-[800px] gap-3">
+    <div className="flex items-center w-full gap-3">
       <div className="text-[#7C7E8C]">{text}</div>
       <div
         className="h-2 rounded-full"

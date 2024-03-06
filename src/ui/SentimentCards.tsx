@@ -10,7 +10,10 @@ function SentimentCards({
   bg,
 }: Readonly<{ children: React.ReactNode }> & SentimentCardProp) {
   return (
-    <div className="p-4 rounded-lg min-h-40" style={{ backgroundColor: bg }}>
+    <div
+      className="min-w-80 p-4 rounded-lg min-h-40"
+      style={{ backgroundColor: bg }}
+    >
       <div className="flex gap-5 items-start">
         <Image
           src={icon}
@@ -21,8 +24,12 @@ function SentimentCards({
           style={{ backgroundColor: bgColor }}
         />
         <div className="flex flex-col">
-          <h3 className="text-lg font-medium w-full">{title}</h3>
-          <span className="text-[#3E5765]">{children}</span>
+          <h3 className="text-base md:text-lg font-medium w-full my-2">
+            {title}
+          </h3>
+          <span className="text-[#3E5765] text-sm md:text-base">
+            {children}
+          </span>
         </div>
       </div>
     </div>
