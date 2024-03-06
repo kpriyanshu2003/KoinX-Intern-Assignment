@@ -8,11 +8,11 @@ import TradingViewWidget from "@/components/TradingViewWidget";
 export default function Home() {
   return (
     <div>
-      <TradingViewWidget />
-      <Sentiment />
-      <About />
-      <Tokenomics />
-      <Team />
+      {/* <TradingViewWidget /> */}
+      {/* <Sentiment /> */}
+      {/* <About /> */}
+      {/* <Tokenomics /> */}
+      {/* <Team /> */}
     </div>
   );
 }
