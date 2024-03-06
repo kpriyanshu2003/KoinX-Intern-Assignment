@@ -9,13 +9,21 @@ function TeamMember({
   children,
 }: Readonly<{ children: React.ReactNode }> & TeamMemberProps) {
   return (
-    <div>
-      <div>
-        <Image src={image} alt={name} width={100} height={100} />
-        <span>{name}</span>
-        <span>{designation}</span>
+    <div className="bg-[#E8F4FD] p-6 rounded-lg my-8 flex items-center">
+      <div className="w-[400px] grid place-items-center text-center">
+        <Image
+          src={image}
+          alt={name}
+          width={100}
+          height={100}
+          className="rounded-lg w-[80%]"
+        />
+        <div className="flex flex-col my-2">
+          <span>{name}</span>
+          <span className="text-[#788F9B] text-sm">{designation}</span>
+        </div>
       </div>
-      <div>{children}</div>
+      <div className="ml-3 text-lg">{children}</div>
     </div>
   );
 }

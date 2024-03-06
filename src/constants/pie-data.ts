@@ -1,4 +1,4 @@
-import { PieDataProps } from "@/@types/PIeData";
+import { PieDataProps } from "@/@types/PieData";
 
 export const PieData: PieDataProps[] = [
   {
