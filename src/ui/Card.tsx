@@ -49,7 +49,7 @@ export function CardImageContainer({
 }: CardImageContainerProps) {
   return (
     <div
-      className="p-3 rounded-lg flex items-start gap-5"
+      className="md:w-1/2 md:mx-5 my-5 md:my-0 p-3 rounded-lg flex items-start gap-5 "
       style={{ backgroundImage: gradient }}
     >
       <Image
@@ -63,7 +63,7 @@ export function CardImageContainer({
         <span className="text-white text-2xl font-semibold my-5">{text}</span>
         <Link
           href={buttonLink}
-          className="rounded-lg text-black bg-white flex items-center p-3 gap-4 font-semibold w-fit my-5"
+          className="rounded-lg text-black bg-white flex items-center py-2 px-3 md:p-3 gap-4 font-semibold w-fit my-5"
         >
           {buttonText}
           <svg

@@ -9,7 +9,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-white p-4">
+    <div className="bg-white rounded-lg p-4">
       <CardContainer>
         <CardTitle>About BitCoin</CardTitle>
         <CardContainer>
@@ -53,7 +53,7 @@ function About() {
         </CardContainer>
         <hr />
         <CardTitle>Already Holding a Bitcoin ?</CardTitle>
-        <div className="flex gap-5">
+        <div className="md:flex gap-5">
           {/* background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%); */}
           <CardImageContainer
             buttonText="Check Now"
