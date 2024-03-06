@@ -4,13 +4,14 @@ import {
   CardSubHeading,
   CardTitle,
 } from "@/ui/Card";
+import { PageContainer } from "@/ui/PageContainer";
 import SentimentCards from "@/ui/SentimentCards";
 import { ProgressBar } from "@/ui/UI-Elements";
 import React from "react";
 
 function Sentiment() {
   return (
-    <div className="bg-white p-4 rounded-lg">
+    <PageContainer>
       <CardContainer>
         <CardTitle>Sentiment</CardTitle>
         <CardContent>
@@ -58,7 +59,7 @@ function Sentiment() {
           </CardContent>
         </CardContent>
       </CardContainer>
-    </div>
+    </PageContainer>
   );
 }
 

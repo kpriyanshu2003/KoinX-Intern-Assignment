@@ -6,7 +6,7 @@ import Link from "next/link";
 import { MdOutlineClose, MdMenu } from "react-icons/md";
 
 function Navbar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex justify-between items-center px-4 md:px-10 py-5 border">
       <Image src="/icon.svg" height={100} width={100} alt="KoinX Logo" />

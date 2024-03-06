@@ -8,9 +8,12 @@ import TradingViewWidget from "@/components/TradingViewWidget";
 export default function Home() {
   return (
     <div>
+      <Sentiment />
+      <About />
       <div className="hidden md:block">
         <Tokenomics />
       </div>
+      <Team />
     </div>
   );
 }

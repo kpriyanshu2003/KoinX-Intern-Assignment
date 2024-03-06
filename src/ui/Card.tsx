@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 export function CardContainer({ children }: { children: React.ReactNode }) {
-  return <div className="p-4">{children}</div>;
+  return <div className="p-2 md:px-4">{children}</div>;
 }
 
 export function CardTitle({

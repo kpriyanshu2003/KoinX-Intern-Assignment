@@ -5,11 +5,12 @@ import {
   CardSubHeading,
   CardTitle,
 } from "@/ui/Card";
+import { PageContainer } from "@/ui/PageContainer";
 import React from "react";
 
 function About() {
   return (
-    <div className="bg-white rounded-lg p-4">
+    <PageContainer>
       <CardContainer>
         <CardTitle>About BitCoin</CardTitle>
         <CardContainer>
@@ -81,7 +82,7 @@ function About() {
           perferendis eos modi quae corporis consectetur.
         </CardContent>
       </CardContainer>
-    </div>
+    </PageContainer>
   );
 }
 
