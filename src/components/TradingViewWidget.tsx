@@ -27,10 +27,14 @@ function TradingViewWidget() {
           "calendar": false,            
           "support_host": "https://www.tradingview.com"
         }`;
-    container.current!.appendChild(script);
+    const currentContainer = container.current;
+    if (currentContainer) {
+      currentContainer.appendChild(script);
+    }
 
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
-    return () => container.current!.removeChild(script);
+    return () => {
+      if (currentContainer) currentContainer.removeChild(script);
+    };
   }, []);
 
   return (
