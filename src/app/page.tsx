@@ -12,10 +12,11 @@ import Performance from "@/components/Performance";
 
 export default function Home() {
   return (
-    <div className="flex items-start gap-5">
-      <div className="w-4/6">
-        <TradingViewWidget />
-        <Sentiment />
+    <div className="md:flex items-start gap-5">
+      <Performance />
+      {/* <div className="md:w-4/6"> */}
+      {/* <TradingViewWidget /> */}
+      {/* <Sentiment />
         <About />
         <div className="hidden md:block">
           <Tokenomics />
@@ -24,10 +25,10 @@ export default function Home() {
         <AlsoLike />
         <Trends />
       </div>
-      <div className="w-2/6 overflow-hidden">
+      <div className="md:w-2/6 overflow-hidden">
         <GetStarted />
         <Trending />
-      </div>
+      </div> */}
     </div>
   );
 }

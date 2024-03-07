@@ -2,32 +2,21 @@ import React from "react";
 
 export function Table({ data }: { data: any }) {
   return (
-    <div>
-      <table>
-        <tbody>
-          <tr>
-            <td>BitCoin Price</td>
-            <td>{data.btcPrice}</td>
+    <table>
+      <tbody>
+        {Object.keys(data).map((key, index) => (
+          <tr key={index} className="border-b h-16 text-sm">
+            <td className="text-left text-[#768396] md:pr-10 whitespace-nowrap w-full">
+              {key}
+            </td>
+            <td
+              className="text-right md:pl-20 whitespace-nowrap"
+              dangerouslySetInnerHTML={{ __html: data[key] }}
+            ></td>
           </tr>
-          <tr>
-            <td>24h Low / 24h High</td>
-            <td>{data.LowHigh24h}</td>
-          </tr>
-          <tr>
-            <td>7d Low / 7d High</td>
-            <td>{data.LowHigh7d}</td>
-          </tr>
-          <tr>
-            <td>Trading Volume</td>
-            <td>{data.tradVolume}</td>
-          </tr>
-          <tr>
-            <td>Market Cap Rank</td>
-            <td>#{data.marketCapRank}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        ))}
+      </tbody>
+    </table>
   );
 }
 
