@@ -64,9 +64,9 @@ function Trading() {
             <span>(24H)</span>
           </div>
         </div>
-        <span className="font-medium">rs. 34,3434.23</span>
+        <span className="font-medium">₹ 34,3434.23</span>
       </CardContainer>
-      {/* <TradingViewWidget /> */}
+      <TradingViewWidget />
     </div>
   );
 }

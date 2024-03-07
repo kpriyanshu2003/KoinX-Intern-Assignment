@@ -38,7 +38,7 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div className="tradingview-widget-container w-full" ref={container}>
       <div className="tradingview-widget-container__widget"></div>
       {/* <div className="tradingview-widget-copyright">
         <a
