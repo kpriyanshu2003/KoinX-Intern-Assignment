@@ -5,11 +5,12 @@ import {
   CardSubHeading,
   CardTitle,
 } from "@/ui/Card";
+import { PageContainer } from "@/ui/PageContainer";
 import React from "react";
 
 function About() {
   return (
-    <div className="bg-white p-4">
+    <PageContainer>
       <CardContainer>
         <CardTitle>About BitCoin</CardTitle>
         <CardContainer>
@@ -53,7 +54,7 @@ function About() {
         </CardContainer>
         <hr />
         <CardTitle>Already Holding a Bitcoin ?</CardTitle>
-        <div className="flex gap-5">
+        <div className="md:flex gap-5">
           {/* background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%); */}
           <CardImageContainer
             buttonText="Check Now"
@@ -81,7 +82,7 @@ function About() {
           perferendis eos modi quae corporis consectetur.
         </CardContent>
       </CardContainer>
-    </div>
+    </PageContainer>
   );
 }
 

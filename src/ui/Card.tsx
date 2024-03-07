@@ -19,16 +19,23 @@ export function CardTitle({
   return <h3 className="text-2xl font-bold my-4">{children}</h3>;
 }
 
-export function CardContent({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+export function CardContent({
+  children,
+  className,
+}: Readonly<{ children: React.ReactNode }> & { className?: string }) {
+  return <div className={className}>{children}</div>;
 }
 
 export function CardSubHeading({
   children,
   icon,
-}: Readonly<{ children: React.ReactNode }> & { icon?: string }) {
+  className,
+}: Readonly<{ children: React.ReactNode }> & {
+  icon?: string;
+  className?: string;
+}) {
   return (
-    <div className="flex items-center my-4">
+    <div className={`flex items-center ${className}`}>
       <h3 className="text-xl font-semibold">{children}</h3>
       {icon && (
         <>
@@ -55,7 +62,7 @@ export function CardImageContainer({
 }: CardImageContainerProps) {
   return (
     <div
-      className="p-3 rounded-lg flex items-start gap-5"
+      className="md:w-1/2 md:mx-5 my-5 md:my-0 p-3 rounded-lg flex items-start gap-5 "
       style={{ backgroundImage: gradient }}
     >
       <Image
@@ -69,7 +76,7 @@ export function CardImageContainer({
         <span className="text-white text-2xl font-semibold my-5">{text}</span>
         <Link
           href={buttonLink}
-          className="rounded-lg text-black bg-white flex items-center p-3 gap-4 font-semibold w-fit my-5"
+          className="rounded-lg text-black bg-white flex items-center py-2 px-3 md:p-3 gap-4 font-semibold w-fit my-5"
         >
           {buttonText}
           <svg
