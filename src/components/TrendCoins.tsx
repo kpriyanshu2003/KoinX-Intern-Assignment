@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { TrendCoin } from "@/ui/Coin";
+import { PageContainer } from "@/ui/PageContainer";
 
 function TrendCoins() {
   return (
-    <div className="bg-white p-6 shadow-md">
-      <div className="text-xl font-bold">Trending Coins (24h)</div>
+    <PageContainer>
+      <span className="text-xl font-bold">Trending Coins (24h)</span>
       <TrendCoin />
       <TrendCoin />
       <TrendCoin />
-    </div>
+    </PageContainer>
   );
 }
 

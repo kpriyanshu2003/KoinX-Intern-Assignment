@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import "react-multi-carousel/lib/styles.css";
 import { CoinDataProps } from "@/@types/CoinData";
-import Coin from "./Coin";
+import { Coin } from "./Coin";
 
 export function Carousell({ data }: { data: CoinDataProps[] }) {
   const arrowStyle =

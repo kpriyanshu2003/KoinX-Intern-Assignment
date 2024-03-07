@@ -2,13 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { IoArrowForward } from "react-icons/io5";
 import { Button } from "@/ui/UI-Elements";
+import { CardTitle } from "@/ui/Card";
 const GetStarted = () => {
   return (
-    <div className="bg-[#0052fe] rounded-3xl flex flex-col gap-8 items-center text-center text-white p-10 w-[24vw]">
-      <div className="text-2xl font-bold ">
+    <div className="bg-[#0052fe] rounded-3xl flex flex-col gap-8 items-center text-center text-white p-10">
+      <CardTitle>
         Get Started with KoinX
         <br /> for FREE
-      </div>
+      </CardTitle>
       <div className="text-[#F2F2F2] text-sm">
         With our range of features that you can equip for free, KoinX allows you
         to be more educated and aware of your tax reports.
