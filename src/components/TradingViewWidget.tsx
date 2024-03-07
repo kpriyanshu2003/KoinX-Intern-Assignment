@@ -18,7 +18,7 @@ function TradingViewWidget() {
           "symbol": "COINBASE:BTCUSD",
           "interval": "W",
           "timezone": "Etc/UTC",
-          "theme": "dark",
+          "theme": "light",
           "style": "3",
           "locale": "en",
           "enable_publishing": false,
@@ -40,7 +40,7 @@ function TradingViewWidget() {
   return (
     <div className="tradingview-widget-container" ref={container}>
       <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright">
+      {/* <div className="tradingview-widget-copyright">
         <a
           href="https://www.tradingview.com/"
           rel="noopener nofollow"
@@ -48,7 +48,7 @@ function TradingViewWidget() {
         >
           <span className="blue-text">Track all markets on TradingView</span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
