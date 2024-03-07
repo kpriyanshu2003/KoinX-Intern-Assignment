@@ -8,12 +8,14 @@ import Tokenomics from "@/components/Tokenomics";
 import GetStarted from "@/components/GetStarted";
 import Trending from "@/components/TrendCoins";
 import TradingViewWidget from "@/components/TradingViewWidget";
+import Performance from "@/components/Performance";
 
 export default function Home() {
   return (
-    <div className="flex items-start gap-5">
-      <div className="w-4/6">
-        <TradingViewWidget />
+    <div className="md:flex items-start gap-5">
+      <div className="md:w-4/6">
+        {/* <TradingViewWidget /> */}
+        <Performance />
         <Sentiment />
         <About />
         <div className="hidden md:block">
@@ -23,7 +25,7 @@ export default function Home() {
         <AlsoLike />
         <Trends />
       </div>
-      <div className="w-2/6 overflow-hidden">
+      <div className="md:w-2/6">
         <GetStarted />
         <Trending />
       </div>
