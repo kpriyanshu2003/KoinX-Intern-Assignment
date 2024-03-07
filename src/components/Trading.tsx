@@ -40,7 +40,7 @@ function Trading() {
           alt="icon"
           width={50}
           height={50}
-          className="rounded-full border w-12 h-12"
+          className="rounded-full w-12 h-12"
         />
         <CardSubHeading>Bitcoin</CardSubHeading>
         <span className="text-[#5D667B] text-xs">BTC</span>
@@ -66,7 +66,9 @@ function Trading() {
         </div>
         <span className="font-medium">₹ 34,3434.23</span>
       </CardContainer>
-      <TradingViewWidget />
+      <div className="w-full md:h-[600px] h-[300px]">
+        <TradingViewWidget />
+      </div>
     </div>
   );
 }
