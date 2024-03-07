@@ -1,11 +1,12 @@
 import { teamData } from "@/constants/team-data";
 import { CardContainer, CardContent, CardTitle } from "@/ui/Card";
+import { PageContainer } from "@/ui/PageContainer";
 import TeamMember from "@/ui/TeamMember";
 import React from "react";
 
 function Team() {
   return (
-    <div className="p-4 bg-white">
+    <PageContainer>
       <CardContainer>
         <CardTitle>Team</CardTitle>
         <CardContent>
@@ -16,7 +17,7 @@ function Team() {
           Veniam, soluta enim, neque quod omnis exercitationem magnam veritatis
           nulla, iste eos sint aperiam! Qui, enim maxime.
         </CardContent>
-        <CardContainer>
+        <CardContent>
           {teamData.map((member) => (
             <TeamMember
               key={member.name}
@@ -27,9 +28,9 @@ function Team() {
               {member.description}
             </TeamMember>
           ))}
-        </CardContainer>
+        </CardContent>
       </CardContainer>
-    </div>
+    </PageContainer>
   );
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 
 export interface ButtonsProps {
-  gradient: string;
+  gradient?: string;
   textColor: string;
   children: React.ReactNode;
+  className?: string;
 }
