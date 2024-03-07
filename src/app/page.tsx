@@ -5,18 +5,22 @@ import AlsoLike from "@/components/AlsoLike";
 import Trends from "@/components/Trends";
 import About from "@/components/About";
 import Tokenomics from "@/components/Tokenomics";
+import GetStarted from "@/components/GetStarted";
+import Trending from "@/components/TrendCoins";
 
 export default function Home() {
   return (
     <div>
-      <Sentiment />
-      <About />
-      <div className="hidden md:block">
-        <Tokenomics />
-      </div>
-      <Team />
-      <AlsoLike />
-      <Trends />
+      {/* <Sentiment /> */}
+      {/* <About /> */}
+      {/* <div className="hidden md:block"> */}
+      {/* <Tokenomics /> */}
+      {/* </div> */}
+      {/* <Team /> */}
+      {/* <AlsoLike /> */}
+      {/* <Trends /> */}
+      <GetStarted />
+      <Trending />
     </div>
   );
 }
