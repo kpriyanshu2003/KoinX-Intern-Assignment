@@ -24,7 +24,7 @@ function Navbar() {
       </div>
       <MdMenu className="w-10 h-10 md:hidden" onClick={() => setOpen(!open)} />
       <div
-        className={`top-0 right-0 w-3/4 bg-opacity-50 bg-black backdrop-blur-lg md:hidden pb-10 text-white fixed h-full z-40 ease-in-out duration-300 ${
+        className={`top-0 right-0 w-3/4 bg-opacity-50 bg-black backdrop-blur-lg md:hidden pb-10 text-white fixed h-dvh z-40 ease-in-out duration-300 ${
           open ? "translate-x-0 " : "translate-x-full"
         }`}
       >
