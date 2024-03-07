@@ -3,8 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export function CardContainer({ children }: { children: React.ReactNode }) {
-  return <div className="p-2 md:px-4">{children}</div>;
+export function CardContainer({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={`p-4 ${className}`}>{children}</div>;
 }
 
 export function CardTitle({
