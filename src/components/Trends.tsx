@@ -4,7 +4,7 @@ import { CardTitle } from "@/ui/Card";
 import { trending } from "@/api";
 import { Carousell } from "@/ui/Carousel";
 
-function AlsoLike() {
+function Trends() {
   const [coinTrending, setCoinTrending] = useState([]);
 
   useEffect(() => {
@@ -20,10 +20,10 @@ function AlsoLike() {
   }, []);
   return (
     <div className="bg-white py-4 px-5 md:px-5">
-      <CardTitle>You May Also Like</CardTitle>
+      <CardTitle>Trending</CardTitle>
       <Carousell data={coinTrending} />
     </div>
   );
 }
 
-export default AlsoLike;
+export default Trends;
