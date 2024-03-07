@@ -1,9 +1,10 @@
 import React from "react";
 import Sentiment from "@/components/Sentiment";
 import Team from "@/components/Team";
+import AlsoLike from "@/components/AlsoLike";
+import Trends from "@/components/Trends";
 import About from "@/components/About";
 import Tokenomics from "@/components/Tokenomics";
-import TradingViewWidget from "@/components/TradingViewWidget";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <Tokenomics />
       </div>
       <Team />
+      <AlsoLike />
+      <Trends />
     </div>
   );
 }

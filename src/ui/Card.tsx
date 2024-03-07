@@ -13,16 +13,23 @@ export function CardTitle({
   return <h3 className="text-2xl font-bold my-4">{children}</h3>;
 }
 
-export function CardContent({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+export function CardContent({
+  children,
+  className,
+}: Readonly<{ children: React.ReactNode }> & { className?: string }) {
+  return <div className={className}>{children}</div>;
 }
 
 export function CardSubHeading({
   children,
   icon,
-}: Readonly<{ children: React.ReactNode }> & { icon?: string }) {
+  className,
+}: Readonly<{ children: React.ReactNode }> & {
+  icon?: string;
+  className?: string;
+}) {
   return (
-    <div className="flex items-center my-4">
+    <div className={`flex items-center ${className}`}>
       <h3 className="text-xl font-semibold">{children}</h3>
       {icon && (
         <>
